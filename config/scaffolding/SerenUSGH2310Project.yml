@@ -20,6 +20,22 @@ packages:
   gitUsername: ArtiKhareGitlab
   gitBranch: master
 services:
+- serviceName: project.serenusgh2310.integrations:en
+  packages:
+  - name: SerenUSGH2310Project
+    version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
+  - name: AddPublicService
+    version: "6.0"
+- serviceName: pub.security:encrypt
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
+- serviceName: pub.security:decrypt
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
 - serviceName: project.serenusgh2310.integrations:githubfs
   packages:
   - name: SerenUSGH2310Project
