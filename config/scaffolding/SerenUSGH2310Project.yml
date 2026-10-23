@@ -20,6 +20,22 @@ packages:
   gitUsername: ArtiKhareGitlab
   gitBranch: master
 services:
+- serviceName: project.serenusgh2310.integrations:githubfs
+  packages:
+  - name: SerenUSGH2310Project
+    version: "1.0"
+  - name: DivisionPackage
+    version: "5.0"
+  - name: AddPublicService
+    version: "6.0"
+- serviceName: DivisionPackage:division_service
+  packages:
+  - name: DivisionPackage
+    version: "5.0"
+- serviceName: pub.math:divideInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1032
 - serviceName: project.serenusgh2310.integrations:gitlabfs
   packages:
   - name: SerenUSGH2310Project
